@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+/* ===================
+Justin Chow (www.oz-d.com)
+Copyright 2011
+written for - Name (URL)
+==================== */
+/* ______________________________________________________ Zeroing Styles ______________________________________________________ */
+
+/* These styles set all browser default styles to zero to maintain consistancy across browsers therefore you must manually set all default styles */
+
+* {
+margin:0;
+padding:0;
+border:0;
+}
+
+html {
+min-height: 100%;
+height: auto;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td,table,html { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; }
+q:before,q:after { content:''; }
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+a img,:link img,:visited img { border:none; }
+
+/* HTML5 Elements support */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* ______________________________________________________ Default Styles ______________________________________________________ */
+
+/* Styles that effect the display and not the structure of the site such as fonts, headers, HTML tag styles and 'a' styles should be defined here */
+
+/* font: font-style font-variant font-weight font-size/line-height font-family; */
+
+body {
+font-family:Myriad, Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#000000;
+}
+
+p {
+font-size:1em;
+padding:.5em 0;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Lists !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+ul, ol {
+list-style:outside;
+color:#000000;
+}
+
+ul {
+list-style-type:disc;
+margin-left:15px;
+}
+
+ol {
+list-style-type:decimal;
+margin-left:25px;
+}
+
+li {
+padding:.5em 0;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Headlines !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+h1, h2, h3, h4, h5, h6 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-weight:normal;
+}
+
+h1 {
+font-size:2.4em;
+color:#663366;
+padding:0 0 10px 0;
+}
+
+h2 {
+font-size:2.2em;
+padding:0 0 4px 0;
+color:#b3b340;
+}
+
+h3 {
+font-size:1.8em;
+padding:0 0 4px 0;
+color:#b3b340;
+}
+
+h4 {
+font-size:1.4em;
+color:#663366;
+padding:0 0 10px 0;
+}
+
+h5 {
+font-size:1.2em;
+padding:0 0 4px 0;
+color:#b3b340;
+font-weight:bold;
+font-style:italic;
+}
+
+h6 {
+font-size:1.2em;
+padding:0 0 4px 0;
+color:#b3b340;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Links !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+a {
+color:#005b5b;
+text-decoration:none;
+}
+
+a:link a:visited a:active {
+color:#005b5b;
+}
+
+a:hover {
+color:#94dede;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Miscellaneous !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.offpage {
+position:absolute;
+left:-99999px;
+}
+/* the .offpage class is for assets that should not be displayed on screen or printed but are there for semantic, audio, screenreaders, or mobile devices */
+
+.jsalert {
+width:100%;
+display:block;
+padding:4px;
+text-align:center;
+position:fixed;
+bottom:0;
+background-color:#900;
+color:#fff;
+font-weight:bold;
+}
+
+/* ______________________________________________________ Layout Styles ______________________________________________________ */
+
+/* Layout styles are styles that control where and what assets are displayed. CSS in this section should follow the indenting format that HTML follows for ease-of-use. I only use classes because IDs cannot be overwritten for alt styles. */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Start Containment Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */	
+body {
+background-color:#6699cc;
+}
+
+	.sitewrapper {
+	background-image:url(images/skin/bggrad.jpg);
+	background-repeat:repeat-x;
+	}  
+
+		.sitebackground {
+		background-image:url(images/skin/pattern_tile.gif);
+		text-align:center;
+		} 
+
+			.sitecontainer {
+			width:600px;
+			margin:0 auto ;
+			text-align:left;
+			}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! End Containment Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+				/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Start Skip Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+				#skipnav {
+				}
+				
+					#skipnav ul {
+					margin:0;
+					list-style:none;
+					}
+					
+						#skipnav li {
+						padding-right:1em;
+						float:left;
+						}				
+				/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! End Skip Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+				
+				/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Start Header Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */			
+				#siteheader {
+				clear:both;
+				width:100%;
+				border-color:#333333;
+				border-style:solid;
+				border-width:3px;
+				}		
+				/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! End Header Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+				
+				/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Main Area Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+				#mainsection {
+				width:100%;
+				border-color:#333333;
+				border-style:solid;
+				border-width:3px;
+				clear:both;
+				}	
+				/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! End Main Area Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+				
+				/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Start Footer Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+				#sitefooter {
+				width:100%;
+				border-color:#333333;
+				border-style:solid;
+				border-width:3px;
+				clear:both;
+				}			
+				/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! End Footer Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* ______________________________________________________ Style Override ______________________________________________________ */
+
+/* Sometime when using multiple external style sheets (and in other instances) it becomes necessary to override certain styles in order to solve inheritance or hierarchical conflicts. */
+
+.printonly {
+display:none;
+}
+
+/* ______________________________________________________ Style Sheet Division ______________________________________________________ */
+
+	/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Section Styles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+		/* ??????????????????????? START STYLE WRAPPER ??????????????????????? */
+
+			/* ---------- START STYLE CONTAINER ---------- */
+
+			/* ---------- END STYLE CONTAINER ---------- */
+
+		/* ??????????????????????? END STYLE WRAPPER ??????????????????????? */

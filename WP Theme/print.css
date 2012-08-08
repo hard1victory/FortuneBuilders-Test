@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+a:link:after {
+content: " ("attr(href)")";
+}
+/* Show link path next to links */
+
+#comments {
+page-break-before: always;
+}
+/* Insert a page break */
